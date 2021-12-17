@@ -114,11 +114,11 @@
 	},
 	"sources": {
 		"valuechecker-lab/ValueChecker.sol": {
-			"keccak256": "0x3a5ca997843bcce8c3c2dd7aeb4b632677869558c66b6bf4b7ca698fa84392ef",
+			"keccak256": "0x059d874c959009f4f19f4d1281ca263bb709685ec197d1194f9c752c3503efa8",
 			"license": "UNLICENSED",
 			"urls": [
-				"bzz-raw://1ddfb04dc39800c0d61fc98285796012cbf78a08cd05fa15f4322e46c55d5210",
-				"dweb:/ipfs/QmSskFz8944sDLbxwcGwWR9HExraT6rKjgFW9RNAGnkpDr"
+				"bzz-raw://d5f4c3499af3888dd2bffef96ca49dec8b796d79287b945de5a7fca47f142352",
+				"dweb:/ipfs/QmU7fCj2434ELHPwh3NQbThbh3TZWqzbojf1axWSNVGRvD"
 			]
 		}
 	},
