@@ -23,7 +23,6 @@
             })
         //console.log(events)
         events.forEach(element => console.log('Boolean result -> ' + element.returnValues['booleanValue']))
-
     }
     catch (e) {
         console.log(e)

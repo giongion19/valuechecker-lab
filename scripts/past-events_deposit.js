@@ -16,14 +16,13 @@
         valueChecker.defaultAccount = accounts[0]
         //console.log('EOA address: ' + valueChecker.defaultAccount)
         
-        valueChecker.getPastEvents('Deposit', {   
+        const events = await valueChecker.getPastEvents('Deposit', {   
                 filter: {originator:  valueChecker.defaultAccount}, 
                 fromBlock: 'earliest'
-            },  function(error, events){ 
-                    events.forEach(element => console.log('Deposit originator: ' + element.returnValues['originator'] +
-                    ' --> amount: ' + element.returnValues['amount']))
-                }
-        )
+        })
+        //console.log(events)
+        events.forEach(element => console.log('Deposit originator: ' + element.returnValues['originator'] +
+        ' --> amount: ' + element.returnValues['amount']))
     }
     catch (e) {
         console.log(e)
