@@ -25,13 +25,15 @@ contract valueChecker
             return false;
         }
     }   
-
-    receive () external payable{
+    
+    // fallback function accepting any incoming amount
+    receive () external payable {
 		emit Deposit(msg.sender, msg.value);
 	}
 
+    // destoys the contract from the blockchain
     function destroy() external {
         require(msg.sender == owner); //only the owner can destroy the contract
-        selfdestruct(owner); // owner must be payable
+        selfdestruct(owner); // system call: owner must be payable
     }
 }

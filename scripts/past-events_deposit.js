@@ -20,7 +20,8 @@
                 filter: {from:  valueChecker.defaultAccount}, 
                 fromBlock: 'earliest'
             },  function(error, events){ 
-                    events.forEach(element => console.log('Deposit amount: ' + element.returnValues['amount']))
+                    events.forEach(element => console.log('Deposit originator: ' + element.returnValues['from'] +
+                    ' --> amount: ' + element.returnValues['amount']))
                 }
         )
     }
