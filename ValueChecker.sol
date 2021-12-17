@@ -8,7 +8,7 @@ contract valueChecker
     
     //contract events
     event Check(bool booleanValue); //logs the boolean result of the check
-    event Deposit(address indexed from, uint amount);
+    event Deposit(address indexed originator, uint amount);
     
     constructor() {
        owner = msg.sender; //the contract creator becomes the contract owner
