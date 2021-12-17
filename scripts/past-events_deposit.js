@@ -3,7 +3,7 @@
     try {  
         console.log('... past values of event Deposit(address indexed from, uint amount) in blockchain logs..')
         
-        const contractAddress = '0xc3dfbf2624c1CCaAE7218958e4b5D76928503691' //Ropsten
+        const contractAddress = '0xD073C53d1C2706994C9Aa72106232DBe565923d1' //Ropsten
         //const contractAddress = '0xD4Fc541236927E2EAf8F27606bD7309C1Fc2cbee' //JVM
         const contractName = 'valueChecker' // Change this for other contract
         // Make sure contract is compiled and artifacts are generated
@@ -17,10 +17,10 @@
         //console.log('EOA address: ' + valueChecker.defaultAccount)
         
         valueChecker.getPastEvents('Deposit', {   
-                filter: {from:  valueChecker.defaultAccount}, 
+                filter: {originator:  valueChecker.defaultAccount}, 
                 fromBlock: 'earliest'
             },  function(error, events){ 
-                    events.forEach(element => console.log('Deposit originator: ' + element.returnValues['from'] +
+                    events.forEach(element => console.log('Deposit originator: ' + element.returnValues['originator'] +
                     ' --> amount: ' + element.returnValues['amount']))
                 }
         )

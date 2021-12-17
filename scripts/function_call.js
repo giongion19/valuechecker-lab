@@ -2,7 +2,7 @@
     try {  
         console.log('call ...')
 
-        const contractAddress = '0xc3dfbf2624c1CCaAE7218958e4b5D76928503691' //Ropsten
+        const contractAddress = '0xD073C53d1C2706994C9Aa72106232DBe565923d1' //Ropsten
         //const contractAddress = '0xd9145CCE52D386f254917e481eB44e9943F39138' //JVM
         const contractName = 'valueChecker' // Change this for other contracts
         // Make sure contract is compiled and artifacts are generated

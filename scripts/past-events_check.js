@@ -3,7 +3,7 @@
     try {  
         console.log('... past values of event Check(bool booleanValue) in blockchain logs...')
         
-        const contractAddress = '0xc3dfbf2624c1CCaAE7218958e4b5D76928503691' //Ropsten
+        const contractAddress = '0xD073C53d1C2706994C9Aa72106232DBe565923d1' //Ropsten
         //const contractAddress = '0xd9145CCE52D386f254917e481eB44e9943F39138' //JVM
         const contractName = 'valueChecker' // Change this for other contract
         // Make sure contract is compiled and artifacts are generated
@@ -17,7 +17,7 @@
         //console.log('EOA address: ' + valueChecker.defaultAccount)
         
         const events = await valueChecker.getPastEvents('Check', {   
-                filter: {from:  valueChecker.defaultAccount}, 
+                filter: {/*from:  valueChecker.defaultAccount*/}, 
                 fromBlock: 'earliest',
                 toBlock: 'latest'
             })
