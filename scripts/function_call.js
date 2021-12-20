@@ -15,7 +15,7 @@
         contract.defaultAccount = accounts[0]
         console.log('EOA "from" address: ' + contract.defaultAccount)
         
-        const value = 200
+        const value = 2
         const result = await contract.methods.Matcher(value).call({ 
             from: contract.defaultAccount }) 
         console.log('call_result: ' + result)

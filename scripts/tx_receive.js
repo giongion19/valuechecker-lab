@@ -26,7 +26,7 @@
         console.log('Logs data init ...')
         //console.log('contract: ' + receipt.logs[0].address)//
         //console.log('topic_0: ', receipt.logs[0].topics[0])
-        console.log('topics[1]: ', receipt.logs[0].topics[1])
+        console.log('topics[1]: ' + receipt.logs[0].topics[1])
         console.log('data: ' + parseInt(receipt.logs[0].data))
 
         console.log('... logs data end') 
