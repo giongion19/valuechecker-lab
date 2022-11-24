@@ -2,8 +2,8 @@
 (async () => {
     try {  
         console.log('... past values of event Check(bool booleanValue) in blockchain logs...')
-        
-        const contractAddress = '0xD073C53d1C2706994C9Aa72106232DBe565923d1' //Ropsten
+        const contractAddress = '0x33d0757f85ad28E865406B605F226e186e2F61C5' //Goerli
+        //const contractAddress = '0xD073C53d1C2706994C9Aa72106232DBe565923d1' //Ropsten
         //const contractAddress = '0xd9145CCE52D386f254917e481eB44e9943F39138' //JVM
         const contractName = 'valueChecker' // Change this for other contract
         // Make sure contract is compiled and artifacts are generated
